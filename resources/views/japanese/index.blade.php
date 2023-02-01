@@ -117,8 +117,8 @@
 
 
     <section>
-        <div class="container pt-60 pt-60">
-            <div class="row" style="background-color: #F8F8F8; padding: 40px; border: 4px solid #CCCCCC;">
+        <div class="container" style="padding-bottom: 60px;">
+            <div class="row" style="background-color: #F8F8F8; padding: 35px;   border: 4px solid #CCCCCC;">
 
                 <dl class="usp-list">
                     <dt>
@@ -307,6 +307,242 @@
                             of failure and continue to challenge ourselves.
                         </p>
                     @endif
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="our-team" style="background-color: #EFEFEF">
+        <div class="container py-2">
+            <div class="section-content">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-8">
+                        <div class="tm-sc-section-title section-title text-center">
+                            <div class="title-wrapper">
+                                <h2 class="title" style="font-size: 40px;">
+                                    Our
+                                    <span class="text-theme-colored1">
+                                        Japanese Teachers
+                                    </span>
+                                </h2>
+                                <p
+                                    style="background-color: #4EB5D9; color: white; font-size: 20px; border-radius: 25px; border: 2px solid #B1812C;">
+                                    Start Your Japanese Adventure with Oriental Japanese Language Centre
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    @foreach ($teachers as $teacher)
+                        <div class="col-md-6 col-xl-3">
+                            <div class="tm-sc-team-box">
+                                <div class="tm-thumb">
+                                    <img class="img-fullwidth" src="{{ $teacher->photo }}" alt="1.jpg"
+                                        style="width: 100%; height: 270px; background-size: center; object-fit: cover; border: 3px solid #B1812C; padding: 7px;">
+                                </div>
+                                <div class="tm-content text-center">
+                                    <h5 class="title">
+                                        {{ $teacher->name ?? '' }}
+                                    </h5>
+                                    <h6 class="position">
+                                        {{ $teacher->position ?? '' }}
+                                    </h6>
+                                    <div class="team-social">
+                                        <ul
+                                            class="styled-icons icon-team-list icon-flat icon-md icon-dark icon-theme-colored1">
+                                            <li class="d-block">
+                                                <a target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="d-block">
+                                                <a target="_blank" href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+
+
+    <section class="our-team" style="background-color: white">
+        <div class="container py-5">
+            <div class="section-content">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-8">
+                        <div class="tm-sc-section-title section-title text-center">
+                            <div class="title-wrapper">
+                                <h2 class="title" style="font-size: 40px;">
+                                    The
+                                    <span class="text-theme-colored1">
+                                        Oriental
+                                    </span>
+                                </h2>
+                                <p
+                                    style="background-color: #4EB5D9; color: white; font-size: 20px; border-radius: 25px; border: 2px solid #B1812C;">
+                                    Course Schedule
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr style="background-color: #e9eeef">
+                                    <th style="text-align: center; font-weight: bold;">
+                                        LEVEL
+                                    </th>
+
+                                    <th style="text-align: center; font-weight: bold;">
+                                        START DATE
+                                    </th>
+
+                                    <th style="text-align: center; font-weight: bold;">
+                                        DATE & TIME
+                                    </th>
+
+                                    <th style="text-align: center; font-weight: bold;">
+                                        DURATION
+                                    </th>
+
+                                    <th style="text-align: center; font-weight: bold;">
+                                        LOCATION
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($course_schedules as $course_schedule)
+                                    <tr>
+                                        <td style="text-align: center; font-weight: bold;">
+                                            {{ $course_schedule->level ?? '' }}
+                                        </td>
+
+                                        <td style="text-align: center; font-weight: bold;">
+                                            {{ $course_schedule->start_date ?? '' }}
+                                        </td>
+
+                                        <td style="text-align: center; font-weight: bold;">
+                                            {{ $course_schedule->date_time ?? '' }}
+                                        </td>
+
+                                        <td style="text-align: center; font-weight: bold;">
+                                            {{ $course_schedule->duration ?? '' }}
+                                        </td>
+
+                                        <td style="text-align: center; font-weight: bold;">
+                                            {{ $course_schedule->location ?? '' }}
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section style="background-color: #EFEFEF">
+        <div class="container py-5">
+            <div class="section-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-8">
+                        <div class="tm-sc-section-title section-title text-center">
+                            <div class="title-wrapper">
+                                <h2 class="title" style="font-size: 40px;">
+                                    School
+                                    <span class="text-theme-colored1">
+                                        Life
+                                    </span>
+                                </h2>
+                                <p
+                                    style="background-color: #4EB5D9; color: white; font-size: 20px; border-radius: 25px; border: 2px solid #B1812C;">
+                                    EVENTS / ACTIVITIES / STUDENT INTERVIEW
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="tm-sc-gallery tm-sc-gallery-grid gallery-style1-basic mb-lg-30">
+                    <div id="gallery-holder-743344" class="isotope-layout grid-3 gutter-5 clearfix lightgallery-lightbox">
+                        <div class="isotope-layout-inner">
+                            @foreach ($activities as $activitie)
+                                @php
+                                    $values = explode(',', $activitie->photo);
+                                @endphp
+                                @foreach ($values as $gallery)
+                                    <div class="isotope-item laboratory surgery">
+                                        <center>
+                                            <h1 style="text-align: center; font-weight: bold; font-size: 20px;">
+                                                @if (session('key') == 'jp')
+                                                    {{ $activitie->title_jp ?? '' }}
+                                                @else
+                                                    {{ $activitie->title_eng ?? '' }}
+                                                @endif
+                                            </h1>
+                                        </center>
+
+                                        <div class="isotope-item-inner">
+                                            <div class="tm-gallery">
+                                                <div class="tm-gallery-inner">
+                                                    <div class="thumb">
+                                                        <a href="#">
+                                                            <img src="{{ $gallery }}" class="" alt="images"
+                                                                style="width: 100%; height: 260px; background-size: center; object-fit: cover;" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="tm-gallery-content-wrapper">
+                                                        <div class="tm-gallery-content">
+                                                            <div class="tm-gallery-content-inner">
+                                                                <div class="icons-holder-inner">
+                                                                    <div
+                                                                        class="styled-icons icon-dark icon-circled icon-theme-colored1">
+                                                                        <a class="lightgallery-trigger styled-icons-item"
+                                                                            data-exthumbimage="{{ $gallery }}"
+                                                                            title="photo" href="{{ $gallery }}"><i
+                                                                                class="fa fa-plus"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="entry-content" style="background-color: white; padding: 20px;">
+                                            @if (session('key') == 'jp')
+                                                {{ Str::limit($activitie->description_jp, 100) }}
+                                            @else
+                                                {{ Str::limit($activitie->description_eng, 100) }}
+                                            @endif
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -137,7 +137,7 @@
                                     </li>
 
                                     <li class="menu-item">
-                                        <a href="{{ route('home') }}">
+                                        <a href="{{ route('training') }}">
                                             Training Center
                                         </a>
                                     </li>
@@ -175,7 +175,7 @@
 
 
                                     <li class="menu-item">
-                                        <a href="{{ route('home') }}">
+                                        <a href="#">
                                             Canditates
                                         </a>
                                     </li>

@@ -16,6 +16,7 @@ Route::resource('activities', ActivitiesController::class);
 Route::resource('cv', CvController::class);
 Route::resource('employer', EmployerController::class);
 Route::resource('japanese_language', JapaneseLanguageController::class);
+Route::get('training', [JapaneseLanguageController::class, 'training'])->name('training');
 Route::resource('overseas_jobs', OverseasJobsController::class);
 
 Route::get('set_eng', [LangController::class, 'lang_eng'])->name('set_eng');

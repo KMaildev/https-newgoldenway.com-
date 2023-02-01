@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CourseSchedule;
+use App\Models\SchoolActivitie;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 
 class JapaneseLanguageController extends Controller
@@ -13,7 +16,15 @@ class JapaneseLanguageController extends Controller
      */
     public function index()
     {
-        return view('japanese.index');
+        $teachers = Teacher::all();
+        $course_schedules = CourseSchedule::all();
+        $activities = SchoolActivitie::all();
+        return view('japanese.index', compact('teachers', 'course_schedules', 'activities'));
+    }
+
+    public function training()
+    {
+        return view('training.index');
     }
 
     /**

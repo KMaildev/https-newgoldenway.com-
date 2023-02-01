@@ -113,14 +113,25 @@
                                     </li>
 
 
-                                    <li class="menu-item">
-                                        <a href="{{ route('home') }}">
-                                            Our Services
-                                        </a>
-                                    </li>
 
                                     <li class="menu-item">
-                                        <a href="{{ route('home') }}">
+                                        <a href="#">
+                                            Our Services
+                                        </a>
+                                        <ul class="dropdown">
+                                            @foreach ($countryies as $country)
+                                                <li>
+                                                    <a href="{{ route('overseas_jobs.show', $country->id) }}">
+                                                        {{ $country->title ?? '' }}
+                                                    </a>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="menu-item">
+                                        <a href="{{ route('japanese_language.index') }}">
                                             Japan Language School
                                         </a>
                                     </li>

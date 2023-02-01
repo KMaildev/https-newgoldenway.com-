@@ -43,6 +43,8 @@
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Bungee Spice' rel='stylesheet'>
+
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans JP' rel='stylesheet'>
 </head>
 
 <body class="tm-container-1230px has-side-panel side-panel-right">

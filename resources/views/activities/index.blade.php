@@ -68,7 +68,11 @@
                                     <div class="post-btn-readmore">
                                         <a href="{{ route('activities.show', $activitie->id) }}"
                                             class="btn btn-plain-text-with-arrow">
-                                            View Details
+                                            @if (session('key') == 'jp')
+                                                詳細を見る
+                                            @else
+                                                View Details
+                                            @endif
                                         </a>
                                     </div>
                                     <div class="clearfix"></div>

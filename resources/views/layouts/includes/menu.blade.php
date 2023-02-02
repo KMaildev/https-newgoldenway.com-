@@ -4,22 +4,32 @@
             <div class="row">
                 <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
                     <ul class="element contact-info">
-                        <li class="contact-phone"><i class="fa fa-phone font-icon sm-display-block"></i> Tel:
-                            +440-98-5298</li>
-                        <li class="contact-email"><i class="fa fa-envelope font-icon sm-display-block"></i>
-                            info@example.com</li>
-                        <li class="contact-address"><i class="fa fa-map font-icon sm-display-block"></i> 121
-                            King Street, Melbourne</li>
+                        <li class="contact-phone" style="background-color: #2978B8; padding: 2px;">
+                            License No.
+                            **/****
+                        </li>
+
+                        <li class="contact-email">
+                            <i class="fa fa-envelope font-icon sm-display-block"></i>
+                            <a href="mailto:info@newgoldenway.com">
+                                info@newgoldenway.com
+                            </a>
+                        </li>
+
+                        <li class="contact-address">
+                            <i class="fa fa-clock font-icon sm-display-block"></i>
+                            9:00 AM to 5:00 PM
+                        </li>
 
                         <li class="">
                             <a href="{{ route('set_eng') }}" class="nav-link">
-                                ENG
+                                <img src="{{ asset('data/us.gif') }}" style="width: 35px;">
                             </a>
                         </li>
 
                         <li class="">
                             <a href="{{ route('set_jp') }}" class="nav-link">
-                                JP
+                                <img src="{{ asset('data/jp.jpeg') }}" style="width: 35px;">
                             </a>
                         </li>
                     </ul>
@@ -27,15 +37,22 @@
                 <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
                     <div class="element pt-0 pb-0">
                         <ul class="styled-icons icon-dark icon-theme-colored1 icon-circled clearfix">
-                            <li><a class="social-link" href="#"><i class="fab fa-facebook"></i></a>
+                            <li>
+                                <a class="social-link" href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
                             </li>
-                            <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="social-link" href="#"><i class="fab fa-youtube"></i></a></li>
+
+                            <li>
+                                <a class="social-link" href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="element pt-0 pt-lg-10 pb-0">
-                        <a href="ajax-load/form-appointment.html" class="btn btn-theme-colored2 btn-sm ajaxload-popup">
-                            License No.
+                        <a href="tel:+959 793 222 113" class="btn btn-theme-colored2 btn-sm">
+                            Call Now
                         </a>
                     </div>
                 </div>
@@ -46,49 +63,54 @@
     <div class="header-middle">
         <div class="container">
             <div class="row">
+
+                {{-- menuzord-brand site-brand --}}
+
                 <div class="col-xl-auto align-self-center header-mid-left text-center text-xl-start">
-                    <a class="menuzord-brand site-brand" href="index-mp-layout1.html">
-                        <img class="logo-default logo-1x" src="{{ asset('assets/images/logo-wide.png') }}"
-                            alt="Logo">
-                        <img class="logo-default logo-2x retina" src="{{ asset('assets/images/logo-wide%402x.png') }}"
-                            alt="Logo">
+                    <a class="" href="{{ route('home') }}">
+                        <img class="logo-default logo-1x" src="{{ asset('data/newgoldenway.png') }}"
+                            alt="Logo" style="width: 150px;">
                     </a>
                 </div>
+
+                <div class="col-xl-auto align-self-center header-mid-left text-center text-xl-start">
+                    <a class="" href="{{ route('home') }}">
+                        <img class="logo-default logo-1x" src="{{ asset('data/school_logo.jpg') }}" alt="Logo"
+                            style="width: 100px;">
+                    </a>
+                </div>
+
                 <div class="col-xl-auto align-self-center ms-xl-auto header-mid-right text-center text-xl-end">
                     <div class="header-mid-column3-container">
                         <div class="row justify-content-sm-center">
                             <div class="col-sm-auto element text-center text-md-start">
                                 <div class="contact-info-box big-icon">
-                                    <div class="left-thumb"> <a href="tel:(123)456-78-90"> <i
-                                                class="flaticon-contact-044-call-1 font-icon  sm-display-block"></i>
-                                        </a></div>
+                                    <div class="left-thumb">
+                                        <a href="tel:+959 793 222 113">
+                                            <i class="flaticon-contact-044-call-1 font-icon  sm-display-block"></i>
+                                        </a>
+                                    </div>
                                     <div class="media-body">
                                         <h5 class="title">Call us at</h5>
-                                        <div class="subtitle"><a href="tel:(123)456-78-90">(123)456-78-90</a>
+                                        <div class="subtitle">
+                                            <a href="tel:+959 793 222 113">
+                                                +959 793 222 113
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-auto element text-center text-md-start">
-                                <div class="contact-info-box big-icon">
-                                    <div class="left-thumb"> <a href="mailto:info@example.com"> <i
-                                                class="flaticon-contact-043-email-1 font-icon  sm-display-block"></i>
-                                        </a></div>
-                                    <div class="media-body">
-                                        <h5 class="title">Email us</h5>
-                                        <div class="subtitle"><a href="mailto:info@example.com">info@example.com</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="col-sm-auto element text-center text-md-start">
                                 <div class="contact-info-box big-icon">
                                     <div class="left-thumb"> <a href="#"> <i
                                                 class="flaticon-contact-025-world font-icon  sm-display-block"></i>
                                         </a></div>
                                     <div class="media-body">
-                                        <h5 class="title">Envato HQ</h5>
-                                        <div class="subtitle">121 King Street, Melbourne</div>
+                                        <h5 class="title">Address</h5>
+                                        <div class="subtitle">
+                                            No.A-4, Room(804), Bo Min Yaung Housing, (42)Ward, North Dagon Tsp, Yangon,
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +210,11 @@
 
                                     <li class="menu-item">
                                         <a href="{{ route('contact.index') }}">
-                                            Contact Us
+                                            @if (session('key') == 'jp')
+                                                お問い合わせ
+                                            @else
+                                                Contact
+                                            @endif
                                         </a>
                                     </li>
 

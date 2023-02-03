@@ -105,6 +105,28 @@
                     </div>
                 </div>
 
+
+                <div class="col-md-3">
+                    <div>
+                        <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1"
+                            style="font-size: 30px; font-wight: bold;">
+                            Overseas Jobs
+                        </h4>
+                        @foreach ($jobs as $job)
+                            <span class="icon-box-title pt-15 mt-0" style="font-size: 17px; font-weight: bold">
+                                @if (session('key') == 'jp')
+                                    {{ $job->job_title_jp ?? '' }}
+                                @else
+                                    {{ $job->job_title_eng ?? '' }}
+                                @endif
+                            </span>
+                            <img src="{{ $job->photo }}" alt=""
+                                style="width: 100%; height: 200px; background-size: center; object-fit: cover; border: 2px solid #B1812C; padding: 7px;">
+                            <hr>
+                        @endforeach
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

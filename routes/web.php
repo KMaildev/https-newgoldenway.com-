@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ActivitiesController;
+use App\Http\Controllers\CanditateController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CvController;
 use App\Http\Controllers\EmployerController;
@@ -18,6 +19,8 @@ Route::resource('employer', EmployerController::class);
 Route::resource('japanese_language', JapaneseLanguageController::class);
 Route::get('training', [JapaneseLanguageController::class, 'training'])->name('training');
 Route::resource('overseas_jobs', OverseasJobsController::class);
+Route::resource('canditate', CanditateController::class);
+Route::get('canditate_ajax/{id}', [CanditateController::class, 'canditateAjax'])->name('canditate_ajax');
 
 Route::get('set_eng', [LangController::class, 'lang_eng'])->name('set_eng');
 Route::get('set_jp', [LangController::class, 'lang_jp'])->name('set_jp');

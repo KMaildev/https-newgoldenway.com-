@@ -68,8 +68,8 @@
 
                 <div class="col-xl-auto align-self-center header-mid-left text-center text-xl-start">
                     <a class="" href="{{ route('home') }}">
-                        <img class="logo-default logo-1x" src="{{ asset('data/newgoldenway.png') }}"
-                            alt="Logo" style="width: 150px;">
+                        <img class="logo-default logo-1x" src="{{ asset('data/newgoldenway.png') }}" alt="Logo"
+                            style="width: 150px;">
                     </a>
                 </div>
 
@@ -131,14 +131,22 @@
                                 <ul id="main-nav" class="menuzord-menu">
 
                                     <li class="menu-item">
-                                        <a href="{{ route('home') }}">Home</a>
+                                        <a href="{{ route('home') }}">
+                                            @if (session('key') == 'jp')
+                                                ホームページ
+                                            @else
+                                                Home
+                                            @endif
+                                        </a>
                                     </li>
-
-
 
                                     <li class="menu-item">
                                         <a href="#">
-                                            Our Services
+                                            @if (session('key') == 'jp')
+                                                サービス
+                                            @else
+                                                Our Services
+                                            @endif
                                         </a>
                                         <ul class="dropdown">
                                             @foreach ($countryies as $country)
@@ -154,13 +162,21 @@
 
                                     <li class="menu-item">
                                         <a href="{{ route('japanese_language.index') }}">
-                                            Japan Language School
+                                            @if (session('key') == 'jp')
+                                                日本語学校
+                                            @else
+                                                Japan Language School
+                                            @endif
                                         </a>
                                     </li>
 
                                     <li class="menu-item">
                                         <a href="{{ route('training') }}">
-                                            Training Center
+                                            @if (session('key') == 'jp')
+                                                トレーニング・センター
+                                            @else
+                                                Training Center
+                                            @endif
                                         </a>
                                     </li>
 
@@ -197,14 +213,22 @@
 
 
                                     <li class="menu-item">
-                                        <a href="#">
-                                            Canditates
+                                        <a href="{{ route('canditate.index') }}">
+                                            @if (session('key') == 'jp')
+                                                カンジダ
+                                            @else
+                                                Canditates
+                                            @endif
                                         </a>
                                     </li>
 
                                     <li class="menu-item">
                                         <a href="{{ route('activities.index') }}">
-                                            Activities
+                                            @if (session('key') == 'jp')
+                                                私たちの活動
+                                            @else
+                                                Activities
+                                            @endif
                                         </a>
                                     </li>
 

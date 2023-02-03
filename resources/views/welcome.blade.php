@@ -421,7 +421,6 @@
                 </div>
             </div>
 
-
             <div class="section-content">
                 <div class="row">
 
@@ -435,7 +434,7 @@
                                         <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
                                 </div>
                             </div>
-                            <div class="tm-sc-progress-bar progress-bar-floating-percent " data-percent="84"
+                            <div class="tm-sc-progress-bar progress-bar-floating-percent " data-percent="100"
                                 data-unit-left="" data-unit-right="">
                                 <div class="progress-title-holder">
                                     <span class="percent">
@@ -466,7 +465,7 @@
                                         <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
                                 </div>
                             </div>
-                            <div class="tm-sc-progress-bar progress-bar-floating-percent " data-percent="84"
+                            <div class="tm-sc-progress-bar progress-bar-floating-percent " data-percent="100"
                                 data-unit-left="" data-unit-right="">
                                 <div class="progress-title-holder">
                                     <span class="percent">
@@ -496,7 +495,7 @@
                                         <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
                                 </div>
                             </div>
-                            <div class="tm-sc-progress-bar progress-bar-floating-percent " data-percent="84"
+                            <div class="tm-sc-progress-bar progress-bar-floating-percent " data-percent="100"
                                 data-unit-left="" data-unit-right="">
                                 <div class="progress-title-holder">
                                     <span class="percent">
@@ -526,7 +525,7 @@
                                         <i class="flaticon-charity-make-a-donation font-16 ml-5"></i></a>
                                 </div>
                             </div>
-                            <div class="tm-sc-progress-bar progress-bar-floating-percent " data-percent="84"
+                            <div class="tm-sc-progress-bar progress-bar-floating-percent " data-percent="100"
                                 data-unit-left="" data-unit-right="">
                                 <div class="progress-title-holder">
                                     <span class="percent">
@@ -558,11 +557,13 @@
                 <div class="row d-flex justify-content-evenly">
 
                     <div class="col-sm-12 col-xl-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <img src="{{ asset('data/ojc1.png') }}" alt="" style="width: 100%; height: 400px; background-size: center; object-fit: cover;">
+                        <img src="{{ asset('data/ojc1.png') }}" alt=""
+                            style="width: 100%; height: auto; background-size: center; object-fit: cover;">
                     </div>
 
                     <div class="col-sm-12 col-xl-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <img src="{{ asset('data/ojc2.png') }}" alt="" style="width: 100%; height: 400px; background-size: center; object-fit: cover;">
+                        <img src="{{ asset('data/ojc2.png') }}" alt=""
+                            style="width: 100%; height: auto; background-size: center; object-fit: cover;">
                     </div>
 
                 </div>

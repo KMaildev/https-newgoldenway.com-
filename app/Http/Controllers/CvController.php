@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreCv;
 use App\Models\Cv;
+use App\Models\OverseasJobs;
 use Illuminate\Http\Request;
 
 class CvController extends Controller
 {
     public function index()
     {
-        return view('cv.index');
+        $jobs = OverseasJobs::all();
+        return view('cv.index', compact('jobs'));
     }
 
     public function store(StoreCv $request)

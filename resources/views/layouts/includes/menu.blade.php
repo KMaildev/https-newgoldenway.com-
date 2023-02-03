@@ -246,7 +246,8 @@
                                     <li class="menu-item">
                                         <div class="element pt-0 pt-lg-10 pb-0">
                                             @auth
-                                                <a href="{{ route('login') }}" class="btn btn-theme-colored2 btn-sm">
+                                                <a href="{{ route('account_show') }}"
+                                                    class="btn btn-theme-colored2 btn-sm">
                                                     <i class="fa fa-user"></i>
                                                     Welcome
                                                 </a>
@@ -262,6 +263,7 @@
                                 </ul>
                             </nav>
                         </div>
+
                     </div>
                 </div>
             </div>

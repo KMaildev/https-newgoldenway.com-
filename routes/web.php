@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ActivitiesController;
 use App\Http\Controllers\CanditateController;
 use App\Http\Controllers\ContactController;
@@ -26,7 +27,12 @@ Route::resource('canditate', CanditateController::class);
 Route::get('set_eng', [LangController::class, 'lang_eng'])->name('set_eng');
 Route::get('set_jp', [LangController::class, 'lang_jp'])->name('set_jp');
 
+
 Auth::routes();
 Route::middleware('auth')->group(function () {
     Route::get('canditate_show/{id}', [CanditateController::class, 'show'])->name('canditate_show');
+    Route::resource('account', AccountController::class);
+    Route::get('account_show', [AccountController::class, 'accountShow'])->name('account_show');
+    Route::get('account_edit', [AccountController::class, 'accountEdit'])->name('account_edit');
+    Route::post('account_update', [AccountController::class, 'accountUpdate'])->name('account_update');
 });

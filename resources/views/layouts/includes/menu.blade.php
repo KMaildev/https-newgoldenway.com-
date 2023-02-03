@@ -145,7 +145,7 @@
                                             @if (session('key') == 'jp')
                                                 サービス
                                             @else
-                                                Our Services
+                                                Services
                                             @endif
                                         </a>
                                         <ul class="dropdown">
@@ -185,7 +185,7 @@
                                             @if (session('key') == 'jp')
                                                 求人応募
                                             @else
-                                                Jobs Apply
+                                                Form
                                             @endif
                                         </a>
                                         <ul class="dropdown">
@@ -242,18 +242,23 @@
                                         </a>
                                     </li>
 
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
 
-                    <div class="row d-block d-xl-none">
-                        <div class="col-12">
-                            <nav id="top-primary-nav-clone"
-                                class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive"
-                                data-effect="slide" data-animation="none" data-align="right">
-                                <ul id="main-nav-clone"
-                                    class="menuzord-menu menuzord-right menuzord-indented scrollable">
+                                    <li class="menu-item">
+                                        <div class="element pt-0 pt-lg-10 pb-0">
+                                            @auth
+                                                <a href="{{ route('login') }}" class="btn btn-theme-colored2 btn-sm">
+                                                    <i class="fa fa-user"></i>
+                                                    Welcome
+                                                </a>
+                                            @else
+                                                <a href="{{ route('login') }}" class="btn btn-theme-colored2 btn-sm">
+                                                    <i class="fa fa-user"></i>
+                                                    Login
+                                                </a>
+                                            @endauth
+                                        </div>
+                                    </li>
+
                                 </ul>
                             </nav>
                         </div>

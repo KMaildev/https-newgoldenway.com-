@@ -96,8 +96,7 @@
 
                 </div>
 
-                <form id="filter-form" action="https://abchr.com.vn/jp/nguoi-lao-dong" method="GET"
-                    class="content_page w-full grid lg:grid-cols-4 md:grid-cols-3 gap-4 mb-4">
+                <div class="content_page w-full grid lg:grid-cols-4 md:grid-cols-3 gap-4 mb-4">
                     <!-- Filter -->
                     <input type="hidden" name="keyword" id="search-key">
                     <input type="hidden" name="page" id="page">
@@ -543,7 +542,7 @@
 
                             {{-- Loop  --}}
                             @foreach ($canditates as $canditate)
-                                <a href="{{ route('canditate.show', $canditate->id) }}"
+                                <a href="{{ route('canditate_show', $canditate->id) }}"
                                     class="worker-item relative bg-white rounded-md p-3 flex md:flex-row flex-col items-center gap-4 transform shadow-sm hover:shadow-lg duration-300">
                                     <div class="flex items-start justify-center w-36 h-36">
                                         <div data-id-for-quick="{{ $canditate->id }}"
@@ -676,7 +675,7 @@
                             @endforeach
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
 

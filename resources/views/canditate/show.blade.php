@@ -127,25 +127,8 @@
                             {{ $worker->name ?? '' }}
                         </div>
                         <div class=" grid md:grid-cols-1 grid-cols-3 gap-4 items-center">
-                            <div class="favorite cursor-pointer col-span-3">
-                                <div class="flex flex-col text-xs md:text-sm font-bold text-red-700"
-                                    onclick="changeFavorite('unFavorite')">
-                                    <div class="py-2 p-4 rounded border border-gray-400 flex w-full">
-                                        <svg width="20" height="20" viewBox="0 0 14 19" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.1241 0H0.87594C0.394737 0 0 0.385937 0 0.864648V19L7 12.0902L14 19V0.864648C14 0.385937 13.609 0 13.1241 0Z"
-                                                fill="#C4161C" />
-                                        </svg>
-                                        <span class="pl-2 leading-5">
-                                            Save
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
                             <a class="flex flex-col text-xs md:text-sm font-bold text-blue-500 col-span-3"
-                                href="https://abchr.com.vn/nguoi-lao-dong/pdf_cv/***%20***%20B%E1%BA%A2O-251"
-                                target="_blank">
+                                href="{{ $worker->cv_file ?? '' }}" target="_blank">
                                 <div class="py-2 p-4 rounded border border-gray-400 flex w-full">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -309,162 +292,69 @@
 
 
 
-
             <div class="py-4 border-b border-gray-300 md:grid md:grid-cols-3 gap-4">
                 <div class="max-w-full pr-6">
-                    <div class="font-bold">360度写真</div>
+                    <div class="font-bold"></div>
                     <div>
-                        <div class="italic flex items-center text-gray-500 font-semibold text-base">アップデート中</div>
+                        <div class="italic flex items-center text-gray-500 font-semibold text-base"></div>
                     </div>
                 </div>
                 <div class="mb-4 md:col-span-2">
                     <div class="mb-4">
-                        <div class="font-bold mb-1">仕事に対する希望</div>
+                        <div class="font-bold mb-1">
+                            Hope for work
+                        </div>
                         <div class="grid grid-cols-2 md:grid-cols-3 text-base mb-1">
-                            <div class="col-span-1 text-gray-500">希望月収</div>
-                            <div class="col-span-1 md:col-span-2 font-semibold text-base">140,000
-                                - 150,000 (JPY)
+                            <div class="col-span-1 text-gray-500">
+                                Desired monthly income
                             </div>
-                        </div>
-                        <div class="grid grid-cols-2 md:grid-cols-3 text-base mb-1">
-                            <div class="col-span-1 text-gray-500">残業の希望</div>
-                            <div class="col-span-1 md:col-span-2 font-semibold text-base"> 中くらい</div>
-                        </div>
-                        <div class="grid grid-cols-2 md:grid-cols-3 text-base mb-1">
-                            <div class="col-span-1 text-gray-500">就業の希望年数</div>
-                            <div class="col-span-1 md:col-span-2 font-semibold text-base">5
-                                年 </div>
-                        </div>
-                        <div class="grid grid-cols-2 md:grid-cols-3 text-base mb-1">
-                            <div class="col-span-1 text-gray-500">帰国後の予定</div>
                             <div class="col-span-1 md:col-span-2 font-semibold text-base">
-                                ベトナムで日系企業で働く
+                                {{ $worker->desired_monthly_salary ?? '' }}
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-3 text-base mb-1">
+                            <div class="col-span-1 text-gray-500">
+                                Hope for overtime
+                            </div>
+                            <div class="col-span-1 md:col-span-2 font-semibold text-base">
+                                {{ $worker->want_to_do_more ?? '' }}
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-3 text-base mb-1">
+                            <div class="col-span-1 text-gray-500">
+                                Desired years of employment
+                            </div>
+                            <div class="col-span-1 md:col-span-2 font-semibold text-base">
+                                {{ $worker->want_to_work_in_japan ?? '' }}
                             </div>
                         </div>
                     </div>
-                    <div class="mb-4">
-                        <div class="font-bold mb-1">仕事経験</div>
-                        <div class="grid grid-cols-2 md:grid-cols-3 mb-1 text-base">
-                            <div class="col-span-1 text-gray-500">09/2020
-                                - 10/2022</div>
-                            <div class="col-span-1 md:col-span-2 font-semibold">個人会社<br><span class="font-normal">
-                                    労働者
-                                </span></div>
-                        </div>
-                        <div class="grid grid-cols-2 md:grid-cols-3 mb-1 text-base">
-                            <div class="col-span-1 text-gray-500">07/2019
-                                - 08/2022</div>
-                            <div class="col-span-1 md:col-span-2 font-semibold">個人会社<br><span class="font-normal">
-                                    労働者
-                                </span></div>
-                        </div>
-                        <div class="grid grid-cols-2 md:grid-cols-3 mb-1 text-base">
-                            <div class="col-span-1 text-gray-500">一番得意な仕事</div>
-                            <div class="col-span-1 md:col-span-2 font-semibold">内部スプレー塗装、CNC マシン操作</div>
-                        </div>
-                    </div>
                 </div>
             </div>
+
             <div class="py-4 border-b border-gray-300">
-                <div class="font-bold mb-4">自己紹介</div>
+                <div class="font-bold mb-4">
+                    Self-introduction
+                </div>
                 <div class="space-x-2 text-base">
-                    活発、協調性がある、勤勉
+                    {{ $worker->introduce_yourself ?? '' }}
                 </div>
             </div>
+
+
             <div class="py-4 border-b border-gray-300">
-                <div class="font-bold mb-4">事前面接の答え</div>
+                <div class="font-bold mb-4">
+                    interview questions
+                </div>
                 <div class="grid gap-2">
-                    <div>
-                        <div class="font-bold text-base mb-2">趣味は何ですか?</div>
-                        <div class="text-base">
-                            サッカーをすることです。
-                        </div>
-                    </div>
-                    <div>
-                        <div class="font-bold text-base mb-2">なぜ日本で働きたいのですか？</div>
-                        <div class="text-base">
-                            経験を積むために日本で働きたいです。帰国後は、これまでの経験を活かしてベトナムでの日系企業で働く予定です
-                        </div>
-                    </div>
+                    {!! $worker->interview_questions ?? '' !!}
                 </div>
             </div>
-            <div class="py-4 border-b border-gray-300">
-                <div class="font-bold pb-4">家族構成</div>
-                <div class="space-y-3 md:space-y-0">
-                    <div class="gap-x-4 gap-y-2 md:grid grid-cols-7 text-base">
-                        <div class="font-semibold">*** *** TOÀN</div>
-                        <div class="">父</div>
-                        <div class="">48
-                            歳 </div>
-                        <div class="">大工作業</div>
-                        <div class="col-span-3">PHÚ THỌ</div>
-                        <div class="font-semibold">*** *** NGUYỆT</div>
-                        <div class="">母</div>
-                        <div class="">44
-                            歳 </div>
-                        <div class="">農業する</div>
-                        <div class="col-span-3">PHÚ THỌ</div>
-                        <div class="font-semibold">*** *** THÚY</div>
-                        <div class="">姉</div>
-                        <div class="">24
-                            歳 </div>
-                        <div class="">販売する</div>
-                        <div class="col-span-3">HÀ NỘI</div>
-                        <div class="font-semibold">*** *** QUÝ</div>
-                        <div class="">弟</div>
-                        <div class="">20
-                            歳 </div>
-                        <div class="">学生・</div>
-                        <div class="col-span-3">HÀ NỘI</div>
-                        <div class="font-semibold">*** *** *** HOA</div>
-                        <div class="">妹</div>
-                        <div class="">19
-                            歳 </div>
-                        <div class="">学生・</div>
-                        <div class="col-span-3">PHÚ THỌ</div>
-                        <div class="font-semibold">*** *** *** LAN</div>
-                        <div class="">妹</div>
-                        <div class="">10
-                            歳 </div>
-                        <div class="">学生・</div>
-                        <div class="col-span-3">PHÚ THỌ</div>
-                    </div>
-                </div>
-            </div>
-            <div class="py-4 border-b border-gray-300">
-                <div class="font-bold pb-4">日本にいる知り合い、親戚</div>
-                <div class="space-y-3 md:space-y-0">
-                    <div class="gap-x-4 gap-y-2  md:grid grid-cols-6 text-base">
-                    </div>
-                </div>
-            </div>
-            <div class="py-4 border-b border-gray-300">
-                <div class="pb-4 font-bold">写真</div>
-                <div
-                    class="gap-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-start overflow-auto text-base">
-                    <a href="https://abchr.com.vn/image/w2000/image/hr_worker/251/image/zM7lZJ3xQgZA8.jpg"
-                        class="image_magnific object-cover bg-cover rounded"
-                        style="background-image: url('https://abchr.com.vn/image/w300/image/hr_worker/251/image/zM7lZJ3xQgZA8.jpg'">
-                        <div class="w-full mt-4/3"></div>
-                    </a>
-                </div>
-            </div>
-            <div class="pt-4">
-                <div class="pb-4 font-bold">入れ墨、障害（有る場合）</div>
-                <div
-                    class="gap-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-start overflow-auto">
-                    <div class="italic flex items-center text-gray-500 font-semibold text-base">アップデート中</div>
-                </div>
-            </div>
-
         </div>
-
-
 
     </body>
 
     </html>
-
 @endsection
 @section('script')
 @endsection

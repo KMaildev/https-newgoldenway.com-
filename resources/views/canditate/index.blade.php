@@ -70,7 +70,6 @@
 
     <body class="bg-gray-100 font-roboto">
 
-
         <div class="w-full bg-gray-100">
             <div class="max-w-screen-xl mx-auto px-4 xl:px-0">
                 <div id="worker-search"
@@ -93,7 +92,6 @@
                                 fill="#828282" />
                         </svg>
                     </button>
-
                 </div>
 
                 <div class="content_page w-full grid lg:grid-cols-4 md:grid-cols-3 gap-4 mb-4">
@@ -107,7 +105,7 @@
                                     class="font-semibold text-lg w-full md:text-left pl-3 text-red-700 border-l-4 border-red-700">
                                     フィルター </h2>
 
-                                <a href="https://abchr.com.vn/jp/nguoi-lao-dong">
+                                <a href="#">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -241,7 +239,7 @@
                                 <div id="province" class="w-full"></div>
                             </div>
                             <div class="w-full flex-col gap-4 text-left">
-                                <a href="https://abchr.com.vn/jp/nguoi-lao-dong"
+                                <a onclick="alert('Please wait a moment. We are upgrade now.')" href="#"
                                     class="flex justify-center text-center w-full bg-gray-200 text-gray-700 py-2 px-4 rounded-md">
                                     <div class="mr-2 flex items-center">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -256,9 +254,8 @@
                             </div>
                         </div>
                     </div>
-
-
                     <!-- End Filter -->
+
                     <div class="mb-4 lg:col-span-3 md:col-span-2">
                         <div class="flex items-center justify-between flex-col gap-4 sm:flex-row">
                             <div

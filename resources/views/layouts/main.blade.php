@@ -8,6 +8,7 @@
     <meta name="description" content="New Golden Way Co.,Ltd" />
     <meta name="keywords" content="New Golden Way Co.,Ltd" />
     <meta name="author" content="New Golden Way Co.,Ltd" />
+    <link rel="icon" href="{{ asset('data/newgoldenway.png') }}" type="image/gif" sizes="20x20">
     <!-- Page Title -->
     <title>New Golden Way Co.,Ltd @yield('title')</title>
     <!-- Stylesheet -->

@@ -36,16 +36,17 @@
         <div class="container pb-70">
             <div class="section-content">
                 <div class="row">
-
                     <div class="col-lg-5 col-xl-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
                         <div class="about-text-content mb-md-30">
                             <img src="{{ asset('data/about.png') }}" alt="aboutImg2">
-                            <h4 class="line-bottom line-bottom-theme-colored1">Who We Are?</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni temporibus voluptates.
-                                Iure quam laboriosam ullam omnis nulla deleniti, repellendus sequi reiciendis quas
-                                voluptatibus consectetur alias aspernatur deserunt veritatis.</p>
-                            <a href="page-service-details.html" class="text-theme-colored1 mt-15">Read More <span
-                                    class="fas fa-long-arrow-alt-right text-theme-colored1 ml-10"></span></a>
+
+                            <h3 class="line-bottom line-bottom-theme-colored1 mt--0"><i
+                                    class="far fa-dot-circle ms-0 me-2"></i>
+                                How New Golden Way Works For The Job Seeker
+                            </h3>
+                            <p style="font-size:16px;font-weight:bold; font-family:Time News Roman; text-align: justify">
+                                We provide sourcing, placement of employee, supply of local & foreign workers in Myanmar
+                            </p>
                         </div>
                     </div>
 
@@ -80,19 +81,20 @@
                                         <div class="icon-wrapper"> <a class="icon icon-sm icon-dark icon-round"> <i
                                                     class="flaticon-charity-shelter"></i> </a></div>
                                         <div class="icon-text">
-                                            <h5 class="icon-box-title">Shelter for Poor</h5>
+                                            <h5 class="icon-box-title">
+                                                Collaborative
+                                            </h5>
                                             <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni
-                                                    temporibus voluptates adipisicing..</p>
-                                                <a href="page-service-details.html" class="text-theme-colored1 mt-15">Read
-                                                    More <span
-                                                        class="fas fa-long-arrow-alt-right text-theme-colored1 ml-10"></span></a>
+                                                <p>
+                                                    To cooperate and support each other by sharing ideas and listening.
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
                                 <div
                                     class="tm-sc-icon-box icon-box icon-left iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate-y mb-30">
@@ -100,19 +102,21 @@
                                         <div class="icon-wrapper"> <a class="icon icon-sm icon-dark icon-round"> <i
                                                     class="flaticon-charity-shaking-hands-inside-a-heart"></i> </a></div>
                                         <div class="icon-text">
-                                            <h5 class="icon-box-title">Help Poor Children</h5>
+                                            <h5 class="icon-box-title">
+                                                Learning and Development
+                                            </h5>
                                             <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni
-                                                    temporibus voluptates adipisicing..</p>
-                                                <a href="page-service-details.html" class="text-theme-colored1 mt-15">Read
-                                                    More <span
-                                                        class="fas fa-long-arrow-alt-right text-theme-colored1 ml-10"></span></a>
+                                                <p>
+                                                    Open mind to learn new things. Continuous self improvement with modern
+                                                    knowledge and skill set.
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
                                 <div
                                     class="tm-sc-icon-box icon-box icon-left iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate-y mb-30">
@@ -120,19 +124,21 @@
                                         <div class="icon-wrapper"> <a class="icon icon-sm icon-dark icon-round"> <i
                                                     class="flaticon-charity-alms"></i> </a></div>
                                         <div class="icon-text">
-                                            <h5 class="icon-box-title">Funding for Poor</h5>
+                                            <h5 class="icon-box-title">
+                                                Accountability
+                                            </h5>
                                             <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni
-                                                    temporibus voluptates adipisicing..</p>
-                                                <a href="page-service-details.html" class="text-theme-colored1 mt-15">Read
-                                                    More <span
-                                                        class="flaticon-charity-world-in-your-hands text-theme-colored1 ml-10"></span></a>
+                                                <p>
+                                                    Have responsibility and good conscience with awareness of the
+                                                    organization’s overall results with honesty and ethical standards.
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
                                 <div
                                     class="tm-sc-icon-box icon-box icon-left iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate-y mb-30">
@@ -140,13 +146,16 @@
                                         <div class="icon-wrapper"> <a class="icon icon-sm icon-dark icon-round"> <i
                                                     class="fas fa-stethoscope"></i> </a></div>
                                         <div class="icon-text">
-                                            <h5 class="icon-box-title">Reduce World Poverty</h5>
+                                            <h5 class="icon-box-title">
+                                                Can-Do Attitude
+
+                                            </h5>
                                             <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magni
-                                                    temporibus voluptates adipisicing..</p>
-                                                <a href="page-service-details.html" class="text-theme-colored1 mt-15">Read
-                                                    More <span
-                                                        class="fas fa-long-arrow-alt-right text-theme-colored1 ml-10"></span></a>
+                                                <p>
+                                                    Using a positive and “Can-Do” attitude to seize the moment and realize
+                                                    the opportunity. Think of obstacles as challenges then strive for
+                                                    success.
+                                                </p>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
@@ -361,7 +370,6 @@
 
 
 
-
     <section data-tm-bg-color="#f7f8fa">
         <div class="container py-3">
             <div class="section-title">
@@ -447,8 +455,9 @@
                                     <div class="progress-content"></div>
                                 </div>
                                 <div class="details">
-                                    <h5 class="title"><a href="#">Education for Children</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
+                                    <h5 class="title">
+                                        We bring you to Japan
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -478,8 +487,9 @@
                                     <div class="progress-content"></div>
                                 </div>
                                 <div class="details">
-                                    <h5 class="title"><a href="#">Education for Children</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
+                                    <h5 class="title">
+                                        We bring you to Japan
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -508,8 +518,9 @@
                                     <div class="progress-content"></div>
                                 </div>
                                 <div class="details">
-                                    <h5 class="title"><a href="#">Education for Children</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
+                                    <h5 class="title">
+                                        We bring you to Japan
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -538,8 +549,9 @@
                                     <div class="progress-content"></div>
                                 </div>
                                 <div class="details">
-                                    <h5 class="title"><a href="#">Education for Children</a></h5>
-                                    <p>Lorem ipsum dolor sit amet, consect adipisicing elit. Praesent quos sit.</p>
+                                    <h5 class="title">
+                                        We bring you to Japan
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -557,13 +569,17 @@
                 <div class="row d-flex justify-content-evenly">
 
                     <div class="col-sm-12 col-xl-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <img src="{{ asset('data/ojc1.png') }}" alt=""
-                            style="width: 100%; height: auto; background-size: center; object-fit: cover;">
+                        <a href="{{ route('japanese_language.index') }}">
+                            <img src="{{ asset('data/ojc1.png') }}" alt=""
+                                style="width: 100%; height: auto; background-size: center; object-fit: cover;">
+                        </a>
                     </div>
 
                     <div class="col-sm-12 col-xl-5 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s">
-                        <img src="{{ asset('data/ojc2.png') }}" alt=""
-                            style="width: 100%; height: auto; background-size: center; object-fit: cover;">
+                        <a href="{{ route('japanese_language.index') }}">
+                            <img src="{{ asset('data/ojc2.png') }}" alt=""
+                                style="width: 100%; height: auto; background-size: center; object-fit: cover;">
+                        </a>
                     </div>
 
                 </div>

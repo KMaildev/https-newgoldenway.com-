@@ -2,7 +2,7 @@
 @section('content')
     <div class="row py-5 d-flex justify-content-center" style="background-color: #F3F4F6;">
         <div class="col-md-3" style="background-color: white; padding: 30px;">
-            <img src="https://lh3.googleusercontent.com/a/AEdFTp5EXi80YH-F-fwU2USJVgx-JPksSJgC1NVASy6gMQ=s500-c"
+            <img src="{{asset('data/user.jpeg')}}"
                 alt="">
         </div>
 
